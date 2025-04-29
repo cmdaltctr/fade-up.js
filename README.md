@@ -58,7 +58,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
     });
     ```
 
-    _(Note: Adapt this based on how your script actually handles customisation. The default behavior might apply to all `.fade-up-element`s automatically without needing this explicit instantiation unless you override defaults)._
+    _(Note: Adapt this based on how your script actually handles customisation. The default behaviour might apply to all `.fade-up-element`s automatically without needing this explicit instantiation unless you override defaults)._
 
 4.  **No CSS Required (for Fade-Up)**
 
@@ -105,7 +105,7 @@ The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions 
     }
     ```
 
-3.  **JavaScript Behavior**
+3.  **JavaScript Behaviour**
 
     The `fade-up.js` script should automatically handle the following for `#inner-wrap`:
 
