@@ -14,7 +14,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
 
 - **Lightweight:** No external dependencies required.
 - **Efficient:** Uses the Intersection Observer API for smooth animations without impacting performance.
-- **Customizable:** Configure animation distance, duration, delay, easing, and visibility threshold for fade-up elements.
+- **Customisable:** Configure animation distance, duration, delay, easing, and visibility threshold for fade-up elements.
 - **Page Transitions:** Optional fade-in and fade-out effects for seamless navigation using the `#inner-wrap` ID.
 - **Graceful Fallback:** Includes CSS fallback for page transitions in case JavaScript fails.
 
@@ -34,7 +34,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
 
 2.  **Add the Target Class**
 
-    Add the class `fade-up-element` (or your chosen class if customized in the script) to any HTML elements you want to animate:
+    Add the class `fade-up-element` (or your chosen class if customised in the script) to any HTML elements you want to animate:
 
     ```html
     <div class="fade-up-element">
@@ -43,9 +43,9 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
     </div>
     ```
 
-3.  **Customize (Optional)**
+3.  **Customise (Optional)**
 
-    You can initialize the `GentleFadeUp` class with custom options for specific elements if needed (assuming your `fade-up.js` exposes this class and functionality):
+    You can initialise the `GentleFadeUp` class with custom options for specific elements if needed (assuming your `fade-up.js` exposes this class and functionality):
 
     ```javascript
     // Example: Assuming GentleFadeUp is exposed globally or via module import
@@ -58,7 +58,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
     });
     ```
 
-    _(Note: Adapt this based on how your script actually handles customization. The default behavior might apply to all `.fade-up-element`s automatically without needing this explicit instantiation unless you override defaults)._
+    _(Note: Adapt this based on how your script actually handles customisation. The default behavior might apply to all `.fade-up-element`s automatically without needing this explicit instantiation unless you override defaults)._
 
 4.  **No CSS Required (for Fade-Up)**
 
@@ -112,9 +112,9 @@ The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions 
     - On page load, the script adds the `transition-active` class to `#inner-wrap` to trigger the fade-in effect.
     - On clicks leading away from the page (e.g., on `<a>` tags not linking to `#`), the script can remove `transition-active` (or apply an alternative fade-out style/class) before allowing navigation to proceed, creating a fade-out effect.
 
-4.  **Customizing Page Transitions**
+4.  **Customising Page Transitions**
 
-    If your `fade-up.js` allows customization of page transition parameters (often via constants within the script):
+    If your `fade-up.js` allows custgitomisation of page transition parameters (often via constants within the script):
 
     ```javascript
     // Example constants within fade-up.js that might be adjustable
@@ -129,7 +129,7 @@ The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions 
 
 ## Configuration Options
 
-If your `fade-up.js` script uses the `GentleFadeUp` class constructor for customization, it supports the following options:
+If your `fade-up.js` script uses the `GentleFadeUp` class constructor for customisation, it supports the following options:
 
 | Option      | Default         | Description                                     |
 | :---------- | :-------------- | :---------------------------------------------- |
@@ -221,7 +221,7 @@ Here’s a complete HTML example demonstrating both fade-up elements and page tr
 			<div class="content-section">
 				<div class="fade-up-element">
 					<h2>Section 2 Header</h2>
-					<p>Another paragraph that utilizes the fade-up effect for a smooth reveal on scroll.</p>
+					<p>Another paragraph that utilises the fade-up effect for a smooth reveal on scroll.</p>
 				</div>
 			</div>
 		</div>
