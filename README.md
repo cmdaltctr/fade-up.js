@@ -242,8 +242,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Changelog
 
-[1.0.0] - 2024-04-29 (Adjust date as needed)
-Initial release of Fade-Up JS.
-Added GentleFadeUp functionality (or core logic) for fade-up animations using the Intersection Observer API.
-Included optional page fade-in and fade-out transitions for seamless navigation via #inner-wrap.
-Added fallback CSS for #inner-wrap page transitions.
+[1.0.0] - 2025-04-29
+
+- Initial release of Fade-Up JS.
+- Added GentleFadeUp functionality (or core logic) for fade-up animations using the Intersection Observer API.
+- Included optional page fade-in and fade-out transitions for seamless navigation via #inner-wrap.
+- Added fallback CSS for #inner-wrap page transitions.
+- Fixed minor typos in README and LICENSE files.
