@@ -236,7 +236,7 @@ Here’s a complete HTML example demonstrating both fade-up elements and page tr
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file (you may need to create this file) for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
