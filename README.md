@@ -145,12 +145,7 @@ _(Note: If your script uses data attributes or other methods for configuration, 
 
 ## Example
 
-Here’s a complete Codepen example demonstrating both fade-up elements and page transitions:
-
-<iframe
-  src="https://codepen.io/aizat88/pen/GggOjOw"
-  style="width:100%; height:300px;"
-></iframe>
+You can see a live example demonstrating both fade-up elements and page transitions on [CodePen](https://codepen.io/aizat88/pen/GggOjOw).
 
 ---
 
