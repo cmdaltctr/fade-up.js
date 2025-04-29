@@ -1,15 +1,15 @@
 /**
  * File: fade-up.js
- * Simple library for adding fade-up animations to elements.
+ * Simple library for adding fade-up animations to elements and page transitions.
  * Version: 1.0.0
  * Author: Aizat
  * License: MIT
  */
 
 /**
- * GentleFadeUp - Gentle fade-up animations.
+ * !! GentleFadeUp - Individual Element Fade-Up Animation !!
+ * Handles fade-up animations for elements with the class 'fade-up-element'.
  */
-
 class GentleFadeUp {
 	constructor(element, options = {}) {
 		this.element = element;
@@ -212,7 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 // Immediately invoke the function expression to run the script
 
-// !! FOUC Fix: On link click or page transition trigger
+/**
+ * !! FOUC Fix: On link click or page transition trigger !!
+ * Handles Flash of Unstyled Content prevention when navigating away.
+ */
 try {
 	localStorage.setItem('isTransitioning', 'true');
 
@@ -231,20 +234,23 @@ try {
 	console.warn('Problem setting localStorage', err);
 }
 
-// !! FOUC FIX: On page load
+/**
+ * !! FOUC FIX: On page load !!
+ * Handles Flash of Unstyled Content prevention when navigating into a page.
+ */
 document.addEventListener('DOMContentLoaded', () => {
 	const pageWrapper = document.querySelector('#inner-wrap');
 	if (!pageWrapper) return;
 
-	if (localStorage.getItem('isTransitioning') === 'true') {
-		try {
+	try {
+		if (localStorage.getItem('isTransitioning') === 'true') {
 			localStorage.removeItem('isTransitioning');
 			pageWrapper.classList.add('transition-active');
-		} catch (err) {
-			console.warn('Problem handling localStorage', err);
+		} else {
+			// Optional: if no transition flag, immediately show the page (prevent stuck opacity 0)
+			pageWrapper.classList.add('transition-active');
 		}
-	} else {
-		// Optional: if no transition flag, immediately show the page (prevent stuck opacity 0)
-		pageWrapper.classList.add('transition-active');
+	} catch (err) {
+		console.warn('Problem handling localStorage', err);
 	}
 });
