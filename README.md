@@ -145,92 +145,12 @@ _(Note: If your script uses data attributes or other methods for configuration, 
 
 ## Example
 
-Here’s a complete HTML example demonstrating both fade-up elements and page transitions:
+Here’s a complete Codepen example demonstrating both fade-up elements and page transitions:
 
-```html
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Fade-Up JS Example</title>
-		<style>
-			/* Basic styling for demonstration */
-			body {
-				font-family: sans-serif;
-				line-height: 1.6;
-				margin: 0;
-			}
-			.content-section {
-				min-height: 100vh;
-				padding: 40px;
-				border-bottom: 1px solid #eee;
-			}
-			h2 {
-				margin-top: 0;
-			}
-
-			/* Fallback CSS for page transitions */
-			#inner-wrap {
-				opacity: 0;
-				transform: translateY(-30px);
-				transition:
-					opacity 0.5s ease-in-out,
-					transform 0.5s ease-in-out;
-			}
-
-			#inner-wrap.transition-active {
-				opacity: 1;
-				transform: translateY(0px);
-			}
-
-			/* Basic styles for fade-up elements (JS adds inline styles for animation) */
-			.fade-up-element {
-				/* You might add some margin or basic layout styles here */
-				margin-bottom: 2em;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="inner-wrap">
-			<div class="content-section">
-				<h1>Fade-Up JS Demo</h1>
-				<p>Scroll down to see elements fade in.</p>
-				<a href="#">Internal Link (No fade out)</a> |
-				<a href="https://github.com">External Link (Fade out)</a>
-			</div>
-
-			<div class="content-section">
-				<div class="fade-up-element">
-					<h2>Section 1 Header</h2>
-					<p>This content block will fade up as it enters the viewport.</p>
-				</div>
-				<div class="fade-up-element">
-					<img
-						src="https://via.placeholder.com/400x200"
-						alt="Placeholder"
-						style="max-width: 100%;"
-					/>
-					<p>Images can fade up too!</p>
-				</div>
-			</div>
-
-			<div class="content-section">
-				<div class="fade-up-element">
-					<h2>Section 2 Header</h2>
-					<p>Another paragraph that utilises the fade-up effect for a smooth reveal on scroll.</p>
-				</div>
-			</div>
-		</div>
-		<!-- /#inner-wrap -->
-
-		<script src="fade-up.js"></script>
-	</body>
-</html>
-```
+<iframe
+  src="https://codepen.io/aizat88/pen/GggOjOw"
+  style="width:100%; height:300px;"
+></iframe>
 
 ---
 
@@ -248,4 +168,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - Added GentleFadeUp functionality (or core logic) for fade-up animations using the Intersection Observer API.
 - Included optional page fade-in and fade-out transitions for seamless navigation via #inner-wrap.
 - Added fallback CSS for #inner-wrap page transitions.
+- Added documentation README and examples.
 - Fixed minor typos in README and LICENSE files.
