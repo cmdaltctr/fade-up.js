@@ -24,7 +24,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
 
 ### Fade-Up Animations
 
-1.  **Include the Script**
+1. **Include the Script**
 
     Add the `fade-up.js` script to your HTML file, ideally just before the closing `</body>` tag:
 
@@ -32,7 +32,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
     <script src="fade-up.js"></script>
     ```
 
-2.  **Add the Target Class**
+2. **Add the Target Class**
 
     Add the class `fade-up-element` (or your chosen class if customised in the script) to any HTML elements you want to animate:
 
@@ -43,7 +43,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
     </div>
     ```
 
-3.  **Customise (Optional)**
+3. **Customise (Optional)**
 
     You can initialise the `GentleFadeUp` class with custom options for specific elements if needed (assuming your `fade-up.js` exposes this class and functionality):
 
@@ -60,7 +60,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
 
     _(Note: Adapt this based on how your script actually handles customisation. The default behaviour might apply to all `.fade-up-element`s automatically without needing this explicit instantiation unless you override defaults)._
 
-4.  **No CSS Required (for Fade-Up)**
+4. **No CSS Required (for Fade-Up)**
 
     The necessary inline styles for the fade-up animation are typically handled directly by the JavaScript.
 
@@ -68,7 +68,7 @@ Fade-Up JS makes it easy to add elegant fade-up animations to your web pages. Us
 
 The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions during navigation. This ensures a smooth experience when entering or leaving a page.
 
-1.  **HTML Structure**
+1. **HTML Structure**
 
     Wrap your main page content within a `div` with the ID `inner-wrap`:
 
@@ -84,7 +84,7 @@ The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions 
     </body>
     ```
 
-2.  **CSS Fallback**
+2. **CSS Fallback**
 
     Include this CSS in your stylesheet or `<style>` tags. It provides the initial hidden state and the transition definition, acting as a fallback if JS fails and is used by the JS to trigger the animation.
 
@@ -105,14 +105,14 @@ The `#inner-wrap` ID is used for managing page fade-in and fade-out transitions 
     }
     ```
 
-3.  **JavaScript Behaviour**
+3. **JavaScript Behaviour**
 
     The `fade-up.js` script should automatically handle the following for `#inner-wrap`:
 
     - On page load, the script adds the `transition-active` class to `#inner-wrap` to trigger the fade-in effect.
     - On clicks leading away from the page (e.g., on `<a>` tags not linking to `#`), the script can remove `transition-active` (or apply an alternative fade-out style/class) before allowing navigation to proceed, creating a fade-out effect.
 
-4.  **Customising Page Transitions**
+4. **Customising Page Transitions**
 
     If your `fade-up.js` allows custgitomisation of page transition parameters (often via constants within the script):
 
@@ -139,7 +139,7 @@ If your `fade-up.js` script uses the `GentleFadeUp` class constructor for custom
 | `easing`    | `'ease-in-out'` | Easing function for the animation.              |
 | `threshold` | `0.1`           | Percentage of the element visible to trigger.   |
 
-_(Note: If your script uses data attributes or other methods for configuration, update this section accordingly.)_
+Note: _If your script uses data attributes or other methods for configuration, update this section accordingly._
 
 ---
 
