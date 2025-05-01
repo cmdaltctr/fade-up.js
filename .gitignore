@@ -16,7 +16,7 @@ Desktop.ini
 
 # JetBrains IDEs #
 ##################
-.idea/          # Project-specific settings (exclude for team repos)
+.idea/          # Project-specific settings
 *.iml           # IntelliJ IDEA module files
 out/           # Directory for compiled class files
 *.ipr           # IntelliJ IDEA project file (older format)
@@ -28,13 +28,13 @@ out/           # Directory for compiled class files
 npm-debug.log*
 yarn-debug.log*
 
-# Dependency directories (if you use a package manager for dev dependencies) #
+# Dependency directories (if use a package manager for dev dependencies) #
 ###########################################################################
-node_modules/ # Exclude all npm/yarn dependencies (even if you have some for testing)
+node_modules/ # Exclude all npm/yarn dependencies (even if have some for testing)
 
 # Test/Example files #
 ######################
-test/results/       # Test output files (if you use a testing framework)
+test/results/       # Test output files (if use a testing framework)
 example/build/      # If you have a build process for an example page
 *.tmp               # Temporary files created during testing
 

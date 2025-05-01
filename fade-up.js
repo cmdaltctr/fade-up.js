@@ -43,7 +43,7 @@ class GentleFadeUp {
 	}
 }
 
-// Initialize GentleFadeUp for elements with the class 'fade-up-element'
+// Initialise GentleFadeUp for elements with the class 'fade-up-element'
 
 document.addEventListener('DOMContentLoaded', function () {
 	const elements = document.querySelectorAll('.fade-up-element');
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// --- Configuration ---
 	const pageWrapperSelector = '#inner-wrap'; // *** IMPORTANT: Should match selector in fade-in script ***
 	const animationDuration = 800; // Duration in milliseconds (MAKE SURE THIS MATCHES fade-in duration)
-	const animationEasing = 'ease-in-out'; // Easing function (MAKE SURE THIS MATCHES fade-in easing) <<< Added for consistency
+	const animationEasing = 'ease-in-out'; // Easing function (MAKE SURE THIS MATCHES fade-in easing) 
 	const fadeUpDistance = '-30px'; // Distance to shift UP during fade-out
 	// --- End Configuration ---
 
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				return;
 			}
 
-			// --- Link Filtering (same as before) ---
+			// --- Link Filtering ---
 			if (
 				link.target === '_blank' ||
 				!['http:', 'https:'].includes(link.protocol) ||
@@ -228,7 +228,7 @@ try {
 
 	// then handle the actual navigation after a short timeout
 	setTimeout(() => {
-		// window.location.href = linkHref; // This line was causing the error
+		// window.location.href = linkHref; // possible issue, remove for now
 	}, 500); // match the transition duration
 } catch (err) {
 	console.warn('Problem setting localStorage', err);
